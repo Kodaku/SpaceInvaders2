@@ -51,6 +51,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7492242752210893186, guid: 0f0ba36bbb1badf4c9a1c723213ec8dc, type: 3}
+      propertyPath: m_SortMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492242752210893186, guid: 0f0ba36bbb1badf4c9a1c723213ec8dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7492242752210893187, guid: 0f0ba36bbb1badf4c9a1c723213ec8dc, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 1

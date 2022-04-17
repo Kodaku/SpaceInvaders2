@@ -23,6 +23,7 @@ public class MyGrid : MonoBehaviour
             for(int j = 0; j < columns; j++)
             {
                 GameObject cellInstance = Instantiate(cellPrefab, new Vector2(j, i), Quaternion.identity);
+                cellInstance.transform.parent = this.transform;
                 Cell cell = cellInstance.GetComponent<Cell>();
                 cell.Row = i;
                 cell.Column = j;

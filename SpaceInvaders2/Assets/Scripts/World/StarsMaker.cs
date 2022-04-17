@@ -23,7 +23,7 @@ public class StarsMaker : MonoBehaviour
             Cell starCell = myGrid.GetStarCell();
             float x = Mathf.Clamp(starCell.Column + Random.Range(0.0f, 1.0f), 0.0f, myGrid.columns - 1);
             float y = Mathf.Clamp(starCell.Row + Random.Range(0.0f, 1.0f), 0.0f, myGrid.rows - 1);
-            Instantiate(stars[starCount], new Vector2(x, y), Quaternion.identity);
+            Instantiate(stars[starCount], new Vector2(x, y), Quaternion.identity).transform.parent = this.transform;
             starCount = (starCount + 1) % maxStars;
         }
     }    
