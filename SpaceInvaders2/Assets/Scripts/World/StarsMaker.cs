@@ -13,7 +13,16 @@ public class StarsMaker : MonoBehaviour
         myGrid = GetComponent<MyGrid>();
         maxStars = stars.Length;
         starCount = 0;
+    }
+
+    private void OnEnable()
+    {
         EventHandler.GenerateStarsEvent += MakeStars;
+    }
+
+    private void OnDisable()
+    {
+        EventHandler.GenerateStarsEvent -= MakeStars;
     }
 
     private void MakeStars()
